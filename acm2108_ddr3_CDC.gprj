@@ -1,0 +1,87 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-138B" pn="GW5AT-LV138PG484AC1/I0">gw5at138b-012</Device>
+    <FileList>
+        <File path="src/dds/DDS_Module_Dual.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/DDS_Param_Controller.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/arb_wave_ram_simple.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/inv_sawtooth_rom_a8d8.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/sawtooth_rom_a8d8.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/sin_rom_a8d8.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/square_wave_rom_a8d8.v" type="file.verilog" enable="1"/>
+        <File path="src/dds/triangular_rom_a8d8.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ADC/adc_capture_stream.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ADC/adc_dual_channel_interleaver.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ADC/frequency_counter.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ADC/frequency_tx_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ADC/zero_cross_comparator.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/can_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/can_eth_udp_wrapper.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/can_udp_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/rtl/can_level_bit.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/rtl/can_level_packet.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/can/rtl/can_top.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/FX2_CDC_Core.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/device_center_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/logic_analyzer/digital_signal_analyzer.v" type="file.verilog" enable="1"/>
+        <File path="src/logic_analyzer/digital_signal_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/logic_analyzer/logic_analyzer_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/logic_analyzer/logic_analyzer_top.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/pwm/pwm_generator.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/pwm/pwm_param_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/sequence/sequence_param_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/sequence/sequence_playback_parallel.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/sequence/sequence_playback_serial_v3.v" type="file.verilog" enable="1"/>
+        <File path="src/common/bin_to_bcd.v" type="file.verilog" enable="1"/>
+        <File path="src/common/bt_uart_bridge.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/cdc_cmd_parser.v" type="file.verilog" enable="1"/>
+        <File path="src/common/cmd_ctrl_simple.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/ddr3_ctrl_2port/ddr3_ctrl_2port.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/ddr3_ctrl_2port/fifo_ddr3_adapter.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/ddr3_memory_interface/ddr3_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/ddr_pll/ddr_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/ddr_pll/ddr_pll_mod.v" type="file.verilog" enable="1"/>
+        <File path="src/debugger_top.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/adc_eth_tx_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/eth_udp_gmii/crc32_d8.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/eth_udp_gmii/eth_udp_tx_gmii.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/eth_udp_gmii/ip_checksum.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/eth_udp_tx_wrapper.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/gmii_rgmii_gmii/gmii_to_rgmii.v" type="file.verilog" enable="1"/>
+        <File path="src/scope/ethernet/trigger_detector.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/fifo_in/fifo_in.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/fifo_sc_hs/fifo_sc_hs.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/fifo_top/fifo_top.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/gowin_pll/gowin_pll_mod.v" type="file.verilog" enable="1"/>
+        <File path="src/common/hc595_driver.v" type="file.verilog" enable="1"/>
+        <File path="src/common/hex8.v" type="file.verilog" enable="1"/>
+        <File path="src/common/hex8_ext.v" type="file.verilog" enable="1"/>
+        <File path="src/common/pll_init.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/DS18B20/ds18b20_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/DS18B20/ds18b20_temp_display.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/Oled_Clear.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/Oled_Init.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/Oled_On.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/Oled_Show_Info.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/Oled_Show_control.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/SPI/spi_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/SPI/spi_master_core.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/font_data.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/i2c_bit_shift.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/i2c_control.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/i2c_generic_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/iic.v" type="file.verilog" enable="1"/>
+        <File path="src/protocol/devices/i2c_spi/oled_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/rd_data_fifo/rd_data_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/uart_byte_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/uart_byte_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/uart_response_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/comm/uart_tx_mux.v" type="file.verilog" enable="1"/>
+        <File path="src/ip/wr_data_fifo/wr_data_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/acm2108_ddr3_CDC.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
